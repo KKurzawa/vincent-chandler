@@ -1,0 +1,60 @@
+.call-email,
+.media-icon{
+    color: var(--color-eight);
+}
+
+.media-icon{
+    transition: all .5s linear;
+}
+
+.media-icon:hover{
+    color:var(--color-four)
+}
+
+.footer-main{
+    background-color: var(--color-seven);
+}
+
+.email,
+.phone,
+.dev-link{
+    position: relative;
+}
+
+.email::before,
+.phone::before,
+.dev-link::before{
+  content: '';
+  position:absolute;
+  bottom: 0;
+  left: 0;
+  border-bottom:solid 1px var(--color-eight);
+  width:0;
+  height: auto;
+  transition: all .25s linear;
+}
+
+.email::after,
+.phone::after,
+.dev-link::after{
+  content: '';
+  position:absolute;
+  bottom: 0;
+  right: 0;
+  border-bottom: solid 1px var(--color-eight);
+  width:0;
+  height: auto;
+  transition: all .25s linear;
+}
+
+.email:hover::before,
+.phone:hover::before,
+.dev-link:hover::before{
+    width: 50%;
+}
+
+.email:hover::after,
+.phone:hover::after,
+.dev-link:hover::after{
+    width: 50%;
+}

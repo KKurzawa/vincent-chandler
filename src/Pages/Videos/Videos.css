@@ -1,0 +1,13 @@
+.videos-title{
+    color:var(--color-six)
+}
+
+.video{
+    filter: grayscale(75%);
+    transition: all .5s linear;
+    border: var(--border-one);
+}
+
+.video:hover{
+    filter: grayscale(20%);
+}

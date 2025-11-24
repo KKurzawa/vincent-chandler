@@ -1,0 +1,16 @@
+.gallery-title{
+    color:var(--color-six)
+}
+
+.vince-photo{
+    filter: grayscale(75%);
+    transition: all .5s linear;
+}
+
+.vince-photo-container{
+    border: var(--border-one);
+}
+
+.vince-photo:hover{
+    filter: grayscale(0);
+}

@@ -1,0 +1,27 @@
+.header-main{
+    background-image: url('src/assets/Images/VincentFive.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: solid 1px var(--color-seven);
+    background-position: top;
+}
+.sub-title,
+.title{
+    color: var(--color-five);
+}
+
+.title{
+    color: var(--color-ten);
+}
+
+.chandler,
+.sub-title{
+    color: var(--color-six);
+}
+
+.title,
+.chandler,
+.sub-title{
+    text-shadow: 1px 1px 1px var(--color-nine);
+}
+

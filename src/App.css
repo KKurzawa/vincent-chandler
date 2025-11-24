@@ -1,0 +1,119 @@
+* {
+  /* css reset */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  /* variables */
+
+  /* colors */
+  --color-one:#ae7c36;
+  --color-two:#212121;
+  --color-three:#303030;
+  --color-four:#434343;
+  --color-five:#ECECEC;
+  --color-six:#b4afaf;
+  --color-seven:#d9c9a7e5;
+  --color-eight:#1F1F1F;
+  --color-nine:#848282;
+  --color-ten:#c5a96de5;
+
+  /* fonts */
+  --font-one: "Merriweather", serif;
+
+  /* borders */
+  --border-one: solid 1px var(--color-seven);
+}
+
+html{
+    background-color: var(--color-eight);
+    font-family: var(--font-one);
+}
+
+/* links */
+.top-btn{
+  margin-bottom: 2.5rem;
+}
+
+.nav-links,
+.top-btn,
+.city,
+.venue,
+.shows-view-more,
+.music-view-more,
+.videos-view-more,
+.shows-modal-text,
+.ok,
+.modal-x{
+    color:var(--color-six);
+    transition: all .5s linear;
+    position: relative;
+}
+
+.nav-link:hover,
+.top-btn:hover,
+.city:hover,
+.venue:hover,
+.shows-view-more:hover,
+.music-view-more:hover,
+.videos-view-more:hover{
+    color: var(--color-seven);
+}
+
+.nav-link::before,
+.top-btn::before,
+.city::before,
+.venue::before,
+.ticket-link::before,
+.shows-view-more::before,
+.music-view-more::before,
+.videos-view-more::before{
+  content: '';
+  position:absolute;
+  bottom: 0;
+  left: 0;
+  border-bottom:solid 1px var(--color-seven);
+  width:0;
+  height: auto;
+  transition: all .25s linear;
+}
+
+.nav-link::after,
+.top-btn::after,
+.city::after,
+.venue::after,
+.ticket-link::after,
+.shows-view-more::after,
+.music-view-more::after,
+.videos-view-more::after{
+  content: '';
+  position:absolute;
+  bottom: 0;
+  right: 0;
+  border-bottom: solid 1px var(--color-seven);
+  width:0;
+  height: auto;
+  transition: all .25s linear;
+}
+
+.nav-link:hover::before,
+.top-btn:hover::before,
+.city:hover::before,
+.venue:hover::before,
+.ticket-link:hover::before,
+.shows-view-more:hover::before,
+.music-view-more:hover::before,
+.videos-view-more:hover::before{
+    width: 50%;
+}
+
+.nav-link:hover::after,
+.top-btn:hover::after,
+.city:hover::after,
+.venue:hover::after,
+.ticket-link:hover::after,
+.shows-view-more:hover::after,
+.music-view-more:hover::after,
+.videos-view-more:hover::after{
+    width: 50%;
+}

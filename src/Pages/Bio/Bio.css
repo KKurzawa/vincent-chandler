@@ -1,0 +1,20 @@
+.about-title{
+    color: var(--color-six);
+}
+
+.awards{
+    border-color: var(--color-nine);
+}
+
+.year{
+    color: var(--color-seven);
+}
+
+.award,
+.bio{
+    color: var(--color-six);
+}
+
+.about-vince-photo{
+    border: var(--border-one);
+}

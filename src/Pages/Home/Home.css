@@ -1,0 +1,36 @@
+.venmo-icon,
+.upcoming-shows-title,
+.latest-release,
+.home-video,
+.donation-text,
+.time,
+.city-venue{
+    color: var(--color-six);
+}
+
+.venmo-icon{
+    transition: all .5s linear;
+}
+
+.venmo-icon:hover{
+    color:var(--color-seven)
+}
+
+.latest-release-photo{
+    filter: grayscale(70%);
+    transition: all .5s linear;
+}
+
+.latest-release-photo:hover{
+    filter: grayscale(0);
+}
+
+.show{
+    border-color: var(--color-nine);
+}
+.date,
+.ticket-link{
+    color: var(--color-seven);
+    transition: all .5s linear;
+    position: relative;
+}

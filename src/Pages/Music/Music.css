@@ -1,0 +1,16 @@
+.music-title,
+.stream-music,
+.purchase-music-title{
+    color:var(--color-six)
+}
+
+.album-cover{
+    filter: grayscale(75%);
+    transition: all .5s linear;
+}
+
+.album-cover:hover{
+    filter: grayscale(0);
+}
+
+
