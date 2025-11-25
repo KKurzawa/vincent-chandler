@@ -1,5 +1,5 @@
 .header-main{
-    background-image: url('src/assets/Images/VincentFive.jpg');
+    background-image: url('/public/images/VincentFive.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     border-bottom: solid 1px var(--color-seven);

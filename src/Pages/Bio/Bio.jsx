@@ -1,5 +1,5 @@
 import './Bio.css'
-import VinceSix from '../../assets/Images/VincentSix.jpg'
+import VinceSix from '../../../public/images/VincentSix.jpg'
 import awards from '../../Utils/Awards'
 
 const Bio = () => {
