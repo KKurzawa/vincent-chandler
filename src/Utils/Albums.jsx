@@ -1,5 +1,5 @@
 import Embraceable from '../assets/Images/VincentEmbraceable.jpg'
-import GrooveInTheFace from '../assets/Images/GrooveInTheFace.jpg'
+// import GrooveInTheFace from '../assets/Images/GrooveInTheFace.jpg'
 import Springwells from '../assets/Images/Springwells.jpg'
 import LuanchControl from '../assets/Images/LuanchControl.jpg'
 
@@ -14,7 +14,7 @@ const Albums = [
         id: 2,
         title: 'Groove In The Face Of Adversity',
         link: 'https://donwas.bandcamp.com/album/groove-in-the-face-of-adversity',
-        cover: GrooveInTheFace
+        cover: Embraceable
     },
     {
         id: 3,
