@@ -24,7 +24,7 @@ const Show = () => {
                 {showList.map((show) => (
                     <>
                         <section className='show flex gap-5 lg:gap-24 pb-10 text-2xl lg:text-4xl border-b-2'>
-                            <ol className='flex gap-2 lg:gap-10'>
+                            <ol className='date-time flex gap-2 lg:gap-10'>
                                 <h2 className='date'>{show.date}</h2>
                                 <h2 className='time'>{show.time}</h2>
                             </ol>

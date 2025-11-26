@@ -5,10 +5,10 @@ const Videos = () => {
     return (
         <main className='videos-main flex flex-col justify-center items-center gap-10 md:gap-20'>
             <h2 className='videos-title relative top-5 md:top-10 text-5xl md:text-6xl lg:text-7xl'>Videos</h2>
+            <section className='videos-container-container flex gap-20'>
 
-            {/* small */}
-            <section className='videos-container-container flex'>
-                <article className='videos-container flex flex-col gap-10'>
+                {/* small */}
+                <article className='videos-container flex flex-col md:hidden gap-10'>
                     {videoLinks.map((video) => (
                         <iframe className='video w-[360px] h-[200px] rounded-md' src={video.link} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen loading='lazy'></iframe>
                     ))}

@@ -20,7 +20,7 @@ const Photos = () => {
             <article className='flex gap-10 lg:gap-28'>
 
                 {/* small */}
-                <section className='flex flex-col gap-10'>
+                <section className='flex flex-col md:hidden gap-10'>
                     {photos.map((item) => (
                         <button onClick={() => openModal(item)}>
                             <article className='vince-photo-container w-[380px] h-[190px] overflow-hidden rounded-md'>
