@@ -17,4 +17,5 @@
 
 .about-vince-photo{
     border: var(--border-one);
+    filter: grayscale(50%);
 }

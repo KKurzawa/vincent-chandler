@@ -51,7 +51,7 @@ const Navbar = () => {
     }
 
     return (
-        <nav className='mobile-nav flex flex-col md:hidden w-full'>
+        <nav className='mobile-nav flex flex-col justify-center items-center md:hidden w-full'>
             <i className='hamburger absolute right-0 top-1 z-20'>
                 <Hamburger
                     toggled={isOpen}
@@ -69,7 +69,7 @@ const Navbar = () => {
                     animate={{ opacity: 1, top: 0 }}
                     exit={{ opacity: 0, top: '-200px' }}
                     transition={{ duration: .5, type: 'spring', stiffness: 30 }}
-                    className="dropdown absolute z-10 left-0 right-0 pt-3 w-full h-[240px]">
+                    className="dropdown absolute flex flex-col justify-center items-center z-10 left-0 right-0 pt-3 w-full h-[240px]">
                     <button className='mobile-nav-link w-fit' onClick={goToHome}>{navLinks[0].title}</button>
                     <button className='mobile-nav-link w-fit' onClick={goToAbout}>{navLinks[1].title}</button>
                     <button className='mobile-nav-link w-fit' onClick={goToPhotos}>{navLinks[2].title}</button>
