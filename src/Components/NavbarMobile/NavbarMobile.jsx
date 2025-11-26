@@ -70,12 +70,12 @@ const Navbar = () => {
                     exit={{ opacity: 0, top: '-200px' }}
                     transition={{ duration: .5, type: 'spring', stiffness: 30 }}
                     className="dropdown absolute z-10 left-0 right-0 pt-3 w-full h-[240px]">
-                    <button className='mobile-nav-link' onClick={goToHome}>{navLinks[0].title}</button>
-                    <button className='mobile-nav-link' onClick={goToAbout}>{navLinks[1].title}</button>
-                    <button className='mobile-nav-link' onClick={goToPhotos}>{navLinks[2].title}</button>
-                    <button className='mobile-nav-link' onClick={goToMusic}>{navLinks[3].title}</button>
-                    <button className='mobile-nav-link' onClick={goToVideos}>{navLinks[4].title}</button>
-                    <button className='mobile-nav-link' onClick={goToShows}>{navLinks[5].title}</button>
+                    <button className='mobile-nav-link w-fit' onClick={goToHome}>{navLinks[0].title}</button>
+                    <button className='mobile-nav-link w-fit' onClick={goToAbout}>{navLinks[1].title}</button>
+                    <button className='mobile-nav-link w-fit' onClick={goToPhotos}>{navLinks[2].title}</button>
+                    <button className='mobile-nav-link w-fit' onClick={goToMusic}>{navLinks[3].title}</button>
+                    <button className='mobile-nav-link w-fit' onClick={goToVideos}>{navLinks[4].title}</button>
+                    <button className='mobile-nav-link w-fit' onClick={goToShows}>{navLinks[5].title}</button>
                 </motion.article>
             )
             }
