@@ -49,12 +49,42 @@ const Home = () => {
 
     return (
         <main className='flex flex-col items-center gap-10'>
-            <article className='flex flex-col items-center gap-20'>
-                <h2 className='upcoming-shows-title text-6xl lg:text-7xl relative top-10'>Upcoming Shows</h2>
-                <article className='flex flex-col items-center gap-5 lg:gap-10'>
+            <article className='flex flex-col items-center gap-0 md:gap-20'>
+                <h2 className='upcoming-shows-title text-4xl md:text-6xl lg:text-7xl relative top-10 mb-10 md:mb:0'>Upcoming Shows</h2>
+                {/* small */}
+
+                {five.map((show) => (
+                    <article className='mobile-upcoming-shows flex flex-col justify-center items-center mt-5 pb-5 text-2xl'>
+                        <section className='mobile-date flex gap-4'>
+                            <h3>{show.date}</h3>
+                            <h3>{show.time}</h3>
+                        </section>
+                        <button className='mobile-city' onClick={() => setTimeout(() => window.open(show.cityLink, '_blank'), 500)}>{show.city}</button>
+                        <button className='mobile-venue' onClick={() => setTimeout(() => window.open(show.cityLink, '_blank'), 500)}>{show.venue}</button>
+                        <article className="mobile-ticket-container">
+                            {show.ticketLink === 1 ? (
+                                <button onClick={notYetAvailable} className='mobile-ticket-link'>Get Tickets</button>
+                            ) :
+                                show.ticketLink === 2 ? (
+                                    <button onClick={noCover} className='mobile-ticket-link'>Get Tickets</button>
+                                ) :
+                                    (
+                                        <button onClick={() => setTimeout(() =>
+                                            window.open(show.ticketLink, '_blank'), 500
+                                        )} className='mobile-ticket-link'>Get Tickets</button>
+                                    )
+                            }
+                        </article>
+                    </article>
+
+                ))}
+
+                {/* medium and large */}
+
+                <article className='hidden md:flex flex-col items-center gap-5 lg:gap-10'>
                     {five.map((show) => (
                         <>
-                            <section className='show flex gap-5 lg:gap-24 pb-10 text-2xl lg:text-4xl border-b-2'>
+                            <section className='show flex gap-5 lg:gap-24 pb-10 text-lg md:text-2xl lg:text-4xl border-b-2'>
                                 <ol className='date-time flex gap-2 lg:gap-10'>
                                     <h2 className='date'>{show.date}</h2>
                                     <h2 className='time'>{show.time}</h2>
@@ -67,7 +97,7 @@ const Home = () => {
                                         <h2>{show.venue}</h2>
                                     </button>
                                 </ol>
-                                <article className="ticket-container">
+                                <article className="mobile-ticket-container">
                                     {show.ticketLink === 1 ? (
                                         <button onClick={notYetAvailable} className='ticket-link'>Get Tickets</button>
                                     ) :
@@ -88,21 +118,22 @@ const Home = () => {
                 </article>
                 {openShowsModal && <ShowModal props={{ content, setOpenShowsModal }} />}
             </article>
-            <section className='flex flex-col lg:flex-row justify-center gap-10 lg:gap-40'>
-                <article className='flex flex-col items-center gap-10'>
-                    <h2 className='latest-release text-6xl lg:text-7xl'>Latest Release</h2>
+
+            <section className='flex flex-col lg:flex-row justify-center gap-5 md:gap-10 lg:gap-40'>
+                <article className='flex flex-col items-center gap-2 md:gap-10'>
+                    <h2 className='latest-release text-4xl md:text-6xl lg:text-7xl'>Latest Release</h2>
                     <button onClick={() => setTimeout(() => window.open('https://music.apple.com/us/album/embraceable/856403086', '_blank'), 500)}>
-                        <img src={Embraceable} className='latest-release-photo rounded-md' />
+                        <img src={Embraceable} className='latest-release-photo w-[350px] md:w-full h-auto rounded-md' />
                     </button>
                     <button onClick={goToMusic} className='music-view-more text-2xl'>More Music</button>
                 </article>
-                <article className='flex flex-col items-center gap-10'>
-                    <h2 className='home-video text-6xl lg:text-7xl'>Video</h2>
-                    <iframe className='video rounded-md' width="560" height="315" src={videoLinks[0].link} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen loading='lazy'></iframe>
+                <article className='flex flex-col items-center gap-2 md:gap-10'>
+                    <h2 className='home-video text-4xl md:text-6xl lg:text-7xl'>Video</h2>
+                    <iframe className='video w-[360px] h-[200px] md:w-[560px] md:h-[315px] rounded-md' src={videoLinks[0].link} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen loading='lazy'></iframe>
                     <button onClick={goToVideos} className='videos-view-more text-2xl'>More Videos</button>
-                    <h2 className='donation-text relative lg:bottom-5 text-6xl lg:text-7xl'>Leave a Donation</h2>
+                    <h2 className='donation-text relative top-5 md:top-0 lg:bottom-5 text-4xl md:text-6xl lg:text-7xl'>Leave a Donation</h2>
                     <button onClick={() => setTimeout(() => window.open('https://account.venmo.com/u/vincentachandler,_blank'), 500)}>
-                        <IoLogoVenmo className='venmo-icon relative lg:bottom-10 text-7xl' />
+                        <IoLogoVenmo className='venmo-icon relative top-5 md:top-0 lg:bottom-10 text-7xl' />
                     </button>
                 </article>
             </section>

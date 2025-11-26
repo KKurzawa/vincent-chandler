@@ -3,8 +3,15 @@
     background-repeat: no-repeat;
     background-size: cover;
     border-bottom: solid 1px var(--color-seven);
-    background-position: top;
+    background-position: bottom;
 }
+
+@media (max-width: 600px) {
+  .header-main{
+    height: 200px;
+  }
+}
+
 .sub-title,
 .title{
     color: var(--color-five);

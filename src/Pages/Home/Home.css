@@ -4,7 +4,9 @@
 .home-video,
 .donation-text,
 .time,
-.city-venue{
+.city-venue,
+.mobile-city,
+.mobile-venue{
     color: var(--color-six);
 }
 
@@ -28,9 +30,17 @@
 .show{
     border-color: var(--color-nine);
 }
-.date,
-.ticket-link{
+.mobile-date,
+.mobile-ticket-link{
     color: var(--color-seven);
     transition: all .5s linear;
     position: relative;
+}
+
+.date-time{
+    color: var(--color-seven);
+}
+
+.mobile-upcoming-shows{
+    border-bottom: solid 1px var(--color-six);
 }

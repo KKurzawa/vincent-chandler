@@ -16,9 +16,22 @@ const Photos = () => {
 
     return (
         <main className='flex flex-col justify-center items-center gap-20'>
-            <h2 className='gallery-title relative top-10 text-6xl lg:text-7xl'>Gallery</h2>
+            <h2 className='gallery-title relative top-10 text-5xl md:text-6xl lg:text-7xl'>Gallery</h2>
             <article className='flex gap-10 lg:gap-28'>
-                <section className='flex flex-col gap-10 lg:gap-28'>
+
+                {/* small */}
+                <section className='flex flex-col gap-10'>
+                    {photos.map((item) => (
+                        <button onClick={() => openModal(item)}>
+                            <article className='vince-photo-container w-[380px] h-[190px] overflow-hidden rounded-md'>
+                                <img src={item.photo} className='vince-photo w-full h-auto' />
+                            </article>
+                        </button>
+                    ))}
+                </section>
+
+                {/* medium and large */}
+                <section className='hidden md:flex flex-col gap-10 lg:gap-28'>
                     {photos.map((item) => item.id < 8 && (
                         <button onClick={() => openModal(item)}>
                             <article className='vince-photo-container w-[300px] h-[150px] lg:w-[500px] lg:h-[250px] overflow-hidden rounded-md'>
@@ -27,7 +40,7 @@ const Photos = () => {
                         </button>
                     ))}
                 </section>
-                <section className='flex flex-col gap-10 lg:gap-28'>
+                <section className='hidden md:flex flex-col gap-10 lg:gap-28'>
                     {photos.map((item) => item.id > 7 && (
                         <button onClick={() => openModal(item)}>
                             <article className='vince-photo-container w-[300px] h-[150px] lg:w-[500px] lg:h-[250px] overflow-hidden rounded-md'>

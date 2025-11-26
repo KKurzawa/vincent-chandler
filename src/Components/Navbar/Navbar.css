@@ -11,7 +11,7 @@
     color: var(--color-seven);
 }
 
-.nav-link::before{
+/* .nav-link::before{
   content: '';
   position:absolute;
   bottom: 0;
@@ -33,10 +33,10 @@
   transition: all .25s linear;
 }
 
-.nav-link:hover:before{
+.nav-link:hover::before{
     width: 50%;
 }
 
-.nav-link:hover:after{
+.nav-link:hover::after{
     width: 50%;
-}
+} */
