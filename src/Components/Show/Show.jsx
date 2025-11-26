@@ -20,7 +20,37 @@ const Show = () => {
 
     return (
         <>
-            <article className='flex flex-col gap-5 lg:gap-10'>
+            {/* small  */}
+            <article>
+                {showList.map((show) => (
+                    <article className='mobile-upcoming-shows md:hidden flex flex-col justify-center items-center mt-5 pb-5 text-2xl'>
+                        <section className='mobile-date flex gap-4'>
+                            <h3>{show.date}</h3>
+                            <h3>{show.time}</h3>
+                        </section>
+                        <button className='mobile-city' onClick={() => setTimeout(() => window.open(show.cityLink, '_blank'), 500)}>{show.city}</button>
+                        <button className='mobile-venue' onClick={() => setTimeout(() => window.open(show.cityLink, '_blank'), 500)}>{show.venue}</button>
+                        <article className="mobile-ticket-container">
+                            {show.ticketLink === 1 ? (
+                                <button onClick={notYetAvailable} className='mobile-ticket-link'>Get Tickets</button>
+                            ) :
+                                show.ticketLink === 2 ? (
+                                    <button onClick={noCover} className='mobile-ticket-link'>Get Tickets</button>
+                                ) :
+                                    (
+                                        <button onClick={() => setTimeout(() =>
+                                            window.open(show.ticketLink, '_blank'), 500
+                                        )} className='mobile-ticket-link'>Get Tickets</button>
+                                    )
+                            }
+                        </article>
+                    </article>
+
+                ))}
+            </article>
+
+            {/* medium and large  */}
+            <article className='hidden md:flex flex-col gap-5 lg:gap-10'>
                 {showList.map((show) => (
                     <>
                         <section className='show flex gap-5 lg:gap-24 pb-10 text-2xl lg:text-4xl border-b-2'>

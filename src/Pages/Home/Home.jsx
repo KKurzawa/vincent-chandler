@@ -50,7 +50,7 @@ const Home = () => {
     return (
         <main className='flex flex-col items-center gap-10'>
             <article className='flex flex-col items-center gap-0 md:gap-20'>
-                <h2 className='upcoming-shows-title text-4xl md:text-6xl lg:text-7xl relative top-10 mb-10 md:mb:0'>Upcoming Shows</h2>
+                <h2 className='upcoming-shows-title text-4xl md:text-6xl lg:text-7xl relative top-5 md:top-10 mb-5 md:mb:0'>Upcoming Shows</h2>
                 {/* small */}
 
                 {five.map((show) => (

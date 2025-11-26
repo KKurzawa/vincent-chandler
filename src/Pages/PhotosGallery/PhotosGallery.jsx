@@ -15,8 +15,8 @@ const Photos = () => {
     }
 
     return (
-        <main className='flex flex-col justify-center items-center gap-20'>
-            <h2 className='gallery-title relative top-10 text-5xl md:text-6xl lg:text-7xl'>Gallery</h2>
+        <main className='flex flex-col justify-center items-center gap-10 md:gap-20'>
+            <h2 className='gallery-title relative top-5 md:top-10 text-4xl md:text-6xl lg:text-7xl'>Gallery</h2>
             <article className='flex gap-10 lg:gap-28'>
 
                 {/* small */}

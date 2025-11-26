@@ -4,7 +4,7 @@ import { videoLinks } from '../../Utils/VideoLinks'
 const Videos = () => {
     return (
         <main className='videos-main flex flex-col justify-center items-center gap-10 md:gap-20'>
-            <h2 className='videos-title relative top-5 md:top-10 text-5xl md:text-6xl lg:text-7xl'>Videos</h2>
+            <h2 className='videos-title relative top-5 md:top-10 text-4xl md:text-6xl lg:text-7xl'>Videos</h2>
             <section className='videos-container-container flex gap-20'>
 
                 {/* small */}

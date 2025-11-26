@@ -5,7 +5,7 @@ import Albums from '../../Utils/Albums'
 const Music = () => {
     return (
         <main className='music-main flex flex-col justify-center items-center gap-20'>
-            <h1 className='music-title relative top-10 text-5xl md:text-6xl lg:text-7xl'>Music</h1>
+            <h1 className='music-title relative top-10 text-4xl md:text-6xl lg:text-7xl'>Music</h1>
             <article className='flex flex-col lg:flex-row justify-center items-center gap-10 lg:gap-40'>
                 <section className='latest-release-container flex flex-col justify-center items-center gap-5'>
                     <h2 className='latest-release text-3xl'>Latest Release</h2>

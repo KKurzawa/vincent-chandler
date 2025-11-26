@@ -5,8 +5,8 @@ import awards from '../../Utils/Awards'
 const Bio = () => {
     return (
         <main className='flex flex-col justify-center items-center gap-5 md:gap-20'>
-            <h2 className='about-title relative top-10 text-4xl md:text-6xl lg:text-7xl'>About</h2>
-            <img src={VinceSix} className='about-vince-photo mt-10 w-[80%] md:w-[55%] rounded-md' />
+            <h2 className='about-title relative top-5 md:top-10 text-4xl md:text-6xl lg:text-7xl'>About</h2>
+            <img src={VinceSix} className='about-vince-photo mt-5 w-[80%] md:w-[55%] rounded-md' />
             <article className='bio text-xl flex flex-col gap-4 w-[85%] md:w-[75%] text-pretty'>
                 <p>
                     Vincent Chandler, is a native Detroiter and protégé of one of the strongest era’s of the Detroit jazz scene, having studied and/or performed with local heroes such as Donald Walden, Kenn Cox, Harold McKinney, Teddy Harris, Marcus Belgrave, Matt Michaels, Francisco Mora, Eddie Nuccilli, Wendall Harrison, Spencer Barefield, Ronald Kischuk, James Carter, Marion Hayden, Regina Carter, and Rodney Whitaker. He has also performed internationally with jazz legends such as Herbie Hancock, Marcus Miller, Joe Henderson, Clark Terry, JALC feat. Wynton Marsalis, Oliver Lake, Bobby Watson, Geri Allen, Roy Hargrove, Ravi Coltrane, JD Allen, Marcus Strickland, Wycliff Gordon, Walter Smith III, Robert Hurst, Jeff “Tain” Watts, Russell Malone, Randy Brecker and Ambrose Akinmusire. He is a featured soloist on “Requiem,” from Roy Hargrove’s only Big Band CD called “Emergence,” James Carter’s “At the Crossroads,” and Rodney Whitaker/Carl Allen’s “Work to Do.” In 2014 he released his first CD as a bandleader, called Vincent Chandler “Embraceable,” including Robert Hurst on Bass.
