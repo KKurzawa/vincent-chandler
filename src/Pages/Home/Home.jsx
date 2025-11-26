@@ -54,7 +54,7 @@ const Home = () => {
                 {/* small */}
 
                 {five.map((show) => (
-                    <article className='mobile-upcoming-shows flex flex-col justify-center items-center mt-5 pb-5 text-2xl'>
+                    <article className='mobile-upcoming-shows md:hidden flex flex-col justify-center items-center mt-5 pb-5 text-2xl'>
                         <section className='mobile-date flex gap-4'>
                             <h3>{show.date}</h3>
                             <h3>{show.time}</h3>
