@@ -117,3 +117,22 @@ html{
 .videos-view-more:hover::after{
     width: 50%;
 }
+
+/* animations */
+.main-home,
+.shows-main,
+.bio-main,
+.music-main,
+.gallary-main,
+.videos-main{
+  animation: main-fade-in 1s linear both;
+}
+
+@keyframes main-fade-in {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}

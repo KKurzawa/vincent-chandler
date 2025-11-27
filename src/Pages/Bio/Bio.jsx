@@ -4,7 +4,7 @@ import awards from '../../Utils/Awards'
 
 const Bio = () => {
     return (
-        <main className='flex flex-col justify-center items-center gap-5 md:gap-20'>
+        <main className='bio-main flex flex-col justify-center items-center gap-5 md:gap-20'>
             <h2 className='about-title relative top-5 md:top-10 text-4xl md:text-6xl lg:text-7xl'>About</h2>
             <img src={VinceSix} className='about-vince-photo mt-5 w-[80%] md:w-[55%] rounded-md' />
             <article className='bio text-xl flex flex-col gap-4 w-[85%] md:w-[75%] text-pretty'>
