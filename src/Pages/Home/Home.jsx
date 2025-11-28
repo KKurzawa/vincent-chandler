@@ -18,7 +18,6 @@ const Home = () => {
     function notYetAvailable() {
         setContent("Either tickets are not yet available for purchase or they will be made available at the door.  Please check back later or contact the venue.")
         setOpenShowsModal(true)
-        console.log(openShowsModal)
     }
 
     function noCover() {
@@ -63,10 +62,10 @@ const Home = () => {
                         <button className='mobile-venue' onClick={() => setTimeout(() => window.open(show.venueLink, '_blank'), 500)}>{show.venue}</button>
                         <article className="mobile-ticket-container">
                             {show.ticketLink === 1 ? (
-                                <button onClick={notYetAvailable} className='mobile-ticket-link'>Get Tickets</button>
+                                <button onClick={() => setTimeout(() => notYetAvailable(), 250)} className='mobile-ticket-link'>Get Tickets</button>
                             ) :
                                 show.ticketLink === 2 ? (
-                                    <button onClick={noCover} className='mobile-ticket-link'>Get Tickets</button>
+                                    <button onClick={() => setTimeout(() => noCover(), 250)} className='mobile-ticket-link'>Get Tickets</button>
                                 ) :
                                     (
                                         <button onClick={() => setTimeout(() =>
@@ -97,12 +96,12 @@ const Home = () => {
                                         <h2>{show.venue}</h2>
                                     </button>
                                 </ol>
-                                <article className="mobile-ticket-container">
+                                <article className="ticket-container">
                                     {show.ticketLink === 1 ? (
-                                        <button onClick={notYetAvailable} className='ticket-link'>Get Tickets</button>
+                                        <button onClick={() => setTimeout(() => notYetAvailable(), 250)} className='ticket-link'>Get Tickets</button>
                                     ) :
                                         show.ticketLink === 2 ? (
-                                            <button onClick={noCover} className='ticket-link'>Get Tickets</button>
+                                            <button onClick={() => setTimeout(() => noCover(), 250)} className='ticket-link'>Get Tickets</button>
                                         ) :
                                             (
                                                 <button onClick={() => setTimeout(() =>
