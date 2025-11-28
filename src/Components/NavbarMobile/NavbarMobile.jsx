@@ -66,11 +66,11 @@ const Navbar = () => {
             <AnimatePresence>
                 {isOpen && (
                     <motion.article
-                        initial={{ top: '-250px' }}
+                        initial={{ top: '-1000px' }}
                         animate={{ top: 0 }}
-                        exit={{ top: '-250px' }}
-                        transition={{ duration: .5, type: 'spring', stiffness: 30, delay: 0 }}
-                        className="dropdown absolute flex flex-col justify-center items-center z-10 left-0 right-0 pt-3 w-full h-[240px]">
+                        exit={{ top: '-1000px' }}
+                        transition={{ duration: 1, type: 'spring', stiffness: 30, delay: 0 }}
+                        className="dropdown absolute flex flex-col justify-center items-center z-10 left-0 right-0 pt-3 w-full h-screen">
                         <button className='mobile-nav-link w-fit' onClick={goToHome}>{navLinks[0].title}</button>
                         <button className='mobile-nav-link w-fit' onClick={goToAbout}>{navLinks[1].title}</button>
                         <button className='mobile-nav-link w-fit' onClick={goToPhotos}>{navLinks[2].title}</button>
