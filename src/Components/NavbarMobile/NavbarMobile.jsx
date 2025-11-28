@@ -16,37 +16,37 @@ const Navbar = () => {
     }
     async function goToHome() {
         navigate(navLinks[0].link)
-        await wait(1000)
+        await wait(500)
         setIsOpen(false)
     }
 
     async function goToAbout() {
         navigate(navLinks[1].link)
-        await wait(1000)
+        await wait(500)
         setIsOpen(false)
     }
 
     async function goToPhotos() {
         navigate(navLinks[2].link)
-        await wait(1000)
+        await wait(500)
         setIsOpen(false)
     }
 
     async function goToMusic() {
         navigate(navLinks[3].link)
-        await wait(1000)
+        await wait(500)
         setIsOpen(false)
     }
 
     async function goToVideos() {
         navigate(navLinks[4].link)
-        await wait(1000)
+        await wait(500)
         setIsOpen(false)
     }
 
     async function goToShows() {
         navigate(navLinks[5].link)
-        await wait(1000)
+        await wait(500)
         setIsOpen(false)
     }
 
@@ -63,22 +63,24 @@ const Navbar = () => {
                     rounded
                 />
             </i>
-            {isOpen && (
-                <motion.article
-                    initial={{ opacity: 0, top: '-200px' }}
-                    animate={{ opacity: 1, top: 0 }}
-                    exit={{ opacity: 0, top: '-200px' }}
-                    transition={{ duration: .5, type: 'spring', stiffness: 30 }}
-                    className="dropdown absolute flex flex-col justify-center items-center z-10 left-0 right-0 pt-3 w-full h-[240px]">
-                    <button className='mobile-nav-link w-fit' onClick={goToHome}>{navLinks[0].title}</button>
-                    <button className='mobile-nav-link w-fit' onClick={goToAbout}>{navLinks[1].title}</button>
-                    <button className='mobile-nav-link w-fit' onClick={goToPhotos}>{navLinks[2].title}</button>
-                    <button className='mobile-nav-link w-fit' onClick={goToMusic}>{navLinks[3].title}</button>
-                    <button className='mobile-nav-link w-fit' onClick={goToVideos}>{navLinks[4].title}</button>
-                    <button className='mobile-nav-link w-fit' onClick={goToShows}>{navLinks[5].title}</button>
-                </motion.article>
-            )
-            }
+            <AnimatePresence>
+                {isOpen && (
+                    <motion.article
+                        initial={{ top: '-250px' }}
+                        animate={{ top: 0 }}
+                        exit={{ top: '-250px' }}
+                        transition={{ duration: .5, type: 'spring', stiffness: 30, delay: 0 }}
+                        className="dropdown absolute flex flex-col justify-center items-center z-10 left-0 right-0 pt-3 w-full h-[240px]">
+                        <button className='mobile-nav-link w-fit' onClick={goToHome}>{navLinks[0].title}</button>
+                        <button className='mobile-nav-link w-fit' onClick={goToAbout}>{navLinks[1].title}</button>
+                        <button className='mobile-nav-link w-fit' onClick={goToPhotos}>{navLinks[2].title}</button>
+                        <button className='mobile-nav-link w-fit' onClick={goToMusic}>{navLinks[3].title}</button>
+                        <button className='mobile-nav-link w-fit' onClick={goToVideos}>{navLinks[4].title}</button>
+                        <button className='mobile-nav-link w-fit' onClick={goToShows}>{navLinks[5].title}</button>
+                    </motion.article>
+                )
+                }
+            </AnimatePresence>
         </nav>
     )
 }
