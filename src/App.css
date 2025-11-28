@@ -71,6 +71,7 @@ html{
 .venue::before,
 .mobile-venue::before,
 .ticket-link::before,
+.mobile-ticket-link::before,
 .shows-view-more::before,
 .music-view-more::before,
 .videos-view-more::before{
@@ -91,6 +92,7 @@ html{
 .venue::after,
 .mobile-venue::after,
 .ticket-link::after,
+.mobile-ticket-link::after,
 .shows-view-more::after,
 .music-view-more::after,
 .videos-view-more::after{
@@ -111,6 +113,7 @@ html{
 .venue:hover::before,
 .mobile-venue:hover::before,
 .ticket-link:hover::before,
+.mobile-ticket-link:hover::before,
 .shows-view-more:hover::before,
 .music-view-more:hover::before,
 .videos-view-more:hover::before{
@@ -124,6 +127,7 @@ html{
 .venue:hover::after,
 .mobile-venue:hover::after,
 .ticket-link:hover::after,
+.mobile-ticket-link:hover::after,
 .shows-view-more:hover::after,
 .music-view-more:hover::after,
 .videos-view-more:hover::after{

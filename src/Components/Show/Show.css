@@ -3,7 +3,8 @@
 }
 
 .date-time,
-.ticket-link{
+.ticket-link,
+.mobile-ticket-link{
     color: var(--color-seven);
     transition: all .5s linear;
     position: relative;
