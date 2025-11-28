@@ -1,7 +1,11 @@
-.music-title,
 .stream-music,
-.purchase-music-title{
+.purchase-music-title,
+.latest-release-music{
     color:var(--color-six)
+}
+
+.music-title{
+    color:var(--color-seven)
 }
 
 .album-cover{

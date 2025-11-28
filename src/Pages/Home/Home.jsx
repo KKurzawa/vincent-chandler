@@ -121,17 +121,17 @@ const Home = () => {
 
             <section className='flex flex-col lg:flex-row justify-center gap-5 md:gap-10 lg:gap-40'>
                 <article className='flex flex-col items-center gap-2 md:gap-10'>
-                    <h2 className='latest-release text-4xl md:text-6xl lg:text-7xl'>Latest Release</h2>
+                    <h2 className='latest-release text-3xl md:text-5xl lg:text-6xl'>Latest Release</h2>
                     <button onClick={() => setTimeout(() => window.open('https://music.apple.com/us/album/embraceable/856403086', '_blank'), 500)}>
                         <img src={Embraceable} className='latest-release-photo w-[350px] md:w-full h-auto rounded-md' />
                     </button>
                     <button onClick={goToMusic} className='music-view-more text-2xl'>More Music</button>
                 </article>
                 <article className='flex flex-col items-center gap-2 md:gap-10'>
-                    <h2 className='home-video text-4xl md:text-6xl lg:text-7xl'>Video</h2>
+                    <h2 className='home-video text-3xl md:text-5xl lg:text-6xl'>Video</h2>
                     <iframe className='video w-[360px] h-[200px] md:w-[560px] md:h-[315px] rounded-md' src={videoLinks[0].link} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen loading='lazy'></iframe>
                     <button onClick={goToVideos} className='videos-view-more text-2xl'>More Videos</button>
-                    <h2 className='donation-text relative top-5 md:top-0 lg:bottom-5 text-4xl md:text-6xl lg:text-7xl'>Leave a Donation</h2>
+                    <h2 className='donation-text relative top-5 md:top-0 lg:bottom-5 text-3xl md:text-5xl lg:text-6xl'>Leave a Donation</h2>
                     <button onClick={() => setTimeout(() => window.open('https://account.venmo.com/u/vincentachandler,_blank'), 500)}>
                         <IoLogoVenmo className='venmo-icon relative top-5 md:top-0 lg:bottom-10 text-7xl' />
                     </button>

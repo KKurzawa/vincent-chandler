@@ -1,13 +1,16 @@
 .venmo-icon,
-.upcoming-shows-title,
-.latest-release,
-.home-video,
-.donation-text,
 .time,
 .city-venue,
 .mobile-city,
+.donation-text,
+.latest-release,
+.home-video,
 .mobile-venue{
     color: var(--color-six);
+}
+
+.upcoming-shows-title{
+    color: var(--color-seven);
 }
 
 .venmo-icon{

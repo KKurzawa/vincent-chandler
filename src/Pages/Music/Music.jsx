@@ -8,7 +8,7 @@ const Music = () => {
             <h1 className='music-title relative top-5 md:top-10 text-4xl md:text-6xl lg:text-7xl'>Music</h1>
             <article className='flex flex-col lg:flex-row justify-center items-center gap-10 lg:gap-40'>
                 <section className='latest-release-container flex flex-col justify-center items-center gap-1 md:gap-5'>
-                    <h2 className='latest-release text-3xl'>Latest Release</h2>
+                    <h2 className='latest-release-music text-3xl'>Latest Release</h2>
                     <button onClick={() => setTimeout(() => window.open(Albums[1].link, '_blank'), 500)}>
                         <img src={Albums[1].cover} className='album-cover w-[350px] md:w-[500px] lg:w-[500px] h-auto rounded-md' />
                     </button>

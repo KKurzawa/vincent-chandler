@@ -15,38 +15,38 @@ const Navbar = () => {
         })
     }
     async function goToHome() {
-        await wait(500)
         navigate(navLinks[0].link)
+        await wait(1000)
         setIsOpen(false)
     }
 
     async function goToAbout() {
-        await wait(500)
         navigate(navLinks[1].link)
+        await wait(1000)
         setIsOpen(false)
     }
 
     async function goToPhotos() {
-        await wait(500)
         navigate(navLinks[2].link)
+        await wait(1000)
         setIsOpen(false)
     }
 
     async function goToMusic() {
-        await wait(500)
         navigate(navLinks[3].link)
+        await wait(1000)
         setIsOpen(false)
     }
 
     async function goToVideos() {
-        await wait(500)
         navigate(navLinks[4].link)
+        await wait(1000)
         setIsOpen(false)
     }
 
     async function goToShows() {
-        await wait(500)
         navigate(navLinks[5].link)
+        await wait(1000)
         setIsOpen(false)
     }
 
