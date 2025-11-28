@@ -60,7 +60,7 @@ const Home = () => {
                             <h3>{show.time}</h3>
                         </section>
                         <button className='mobile-city' onClick={() => setTimeout(() => window.open(show.cityLink, '_blank'), 500)}>{show.city}</button>
-                        <button className='mobile-venue' onClick={() => setTimeout(() => window.open(show.cityLink, '_blank'), 500)}>{show.venue}</button>
+                        <button className='mobile-venue' onClick={() => setTimeout(() => window.open(show.venueLink, '_blank'), 500)}>{show.venue}</button>
                         <article className="mobile-ticket-container">
                             {show.ticketLink === 1 ? (
                                 <button onClick={notYetAvailable} className='mobile-ticket-link'>Get Tickets</button>
