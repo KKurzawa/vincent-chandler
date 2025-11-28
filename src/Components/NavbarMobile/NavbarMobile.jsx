@@ -69,14 +69,14 @@ const Navbar = () => {
                         initial={{ top: '-1000px' }}
                         animate={{ top: 0 }}
                         exit={{ top: '-1000px' }}
-                        transition={{ duration: 1, type: 'spring', stiffness: 30, delay: 0 }}
-                        className="dropdown absolute flex flex-col justify-center items-center z-10 left-0 right-0 pt-3 w-full h-screen">
-                        <button className='mobile-nav-link w-fit' onClick={goToHome}>{navLinks[0].title}</button>
-                        <button className='mobile-nav-link w-fit' onClick={goToAbout}>{navLinks[1].title}</button>
-                        <button className='mobile-nav-link w-fit' onClick={goToPhotos}>{navLinks[2].title}</button>
-                        <button className='mobile-nav-link w-fit' onClick={goToMusic}>{navLinks[3].title}</button>
-                        <button className='mobile-nav-link w-fit' onClick={goToVideos}>{navLinks[4].title}</button>
-                        <button className='mobile-nav-link w-fit' onClick={goToShows}>{navLinks[5].title}</button>
+                        transition={{ visualDuration: 2, type: 'spring', stiffness: 30, delay: 0 }}
+                        className="dropdown absolute flex flex-col justify-center items-center gap-10 z-10 left-0 right-0 pt-3 w-full h-screen">
+                        <button className='mobile-nav-link w-fit text-6xl' onClick={goToHome}>{navLinks[0].title}</button>
+                        <button className='mobile-nav-link w-fit text-6xl' onClick={goToAbout}>{navLinks[1].title}</button>
+                        <button className='mobile-nav-link w-fit text-6xl' onClick={goToPhotos}>{navLinks[2].title}</button>
+                        <button className='mobile-nav-link w-fit text-6xl' onClick={goToMusic}>{navLinks[3].title}</button>
+                        <button className='mobile-nav-link w-fit text-6xl' onClick={goToVideos}>{navLinks[4].title}</button>
+                        <button className='mobile-nav-link w-fit text-6xl' onClick={goToShows}>{navLinks[5].title}</button>
                     </motion.article>
                 )
                 }
