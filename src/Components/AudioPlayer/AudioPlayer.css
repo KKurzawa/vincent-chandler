@@ -1,8 +1,0 @@
-.audio-player{
-    filter: grayscale(75%);
-    transition: all .5s linear;
-}
-
-.audio-player{
-    filter: grayscale(0);
-}

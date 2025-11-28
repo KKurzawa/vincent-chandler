@@ -32,10 +32,10 @@ const Show = () => {
                         <button className='mobile-venue' onClick={() => setTimeout(() => window.open(show.venueLink, '_blank'), 500)}>{show.venue}</button>
                         <article className="mobile-ticket-container">
                             {show.ticketLink === 1 ? (
-                                <button onClick={() => setTimeout(() => notYetAvailable(), 250)} className='mobile-ticket-link'>Get Tickets</button>
+                                <button onClick={() => setTimeout(() => notYetAvailable(), 500)} className='mobile-ticket-link'>Get Tickets</button>
                             ) :
                                 show.ticketLink === 2 ? (
-                                    <button onClick={() => setTimeout(() => noCover(), 250)} className='mobile-ticket-link'>Get Tickets</button>
+                                    <button onClick={() => setTimeout(() => noCover(), 500)} className='mobile-ticket-link'>Get Tickets</button>
                                 ) :
                                     (
                                         <button onClick={() => setTimeout(() =>

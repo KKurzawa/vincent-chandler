@@ -12,11 +12,6 @@
   }
 }
 
-.sub-title,
-.title{
-    color: var(--color-five);
-}
-
 .title{
     color: var(--color-ten);
 }

@@ -19,7 +19,6 @@
 .phone,
 .dev-link{
     position: relative;
-    z-index: 1;
 }
 
 .email::before,

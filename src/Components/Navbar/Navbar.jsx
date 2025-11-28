@@ -41,7 +41,7 @@ const Navbar = () => {
     }
 
     return (
-        <nav className='nav-links hidden md:flex gap-10 relative bottom-10 text-3xl lg:text-6xl'>
+        <nav className='nav-links hidden relative bottom-10 md:flex gap-10 text-3xl lg:text-6xl'>
             <button className='nav-link' onClick={goToHome}>{navLinks[0].title}</button>
             <button className='nav-link' onClick={goToAbout}>{navLinks[1].title}</button>
             <button className='nav-link' onClick={goToPhotos}>{navLinks[2].title}</button>

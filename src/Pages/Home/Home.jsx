@@ -49,7 +49,7 @@ const Home = () => {
     return (
         <main className='main-home flex flex-col items-center gap-10'>
             <article className='flex flex-col items-center gap-0 md:gap-20'>
-                <h2 className='upcoming-shows-title text-4xl md:text-6xl lg:text-7xl relative top-5 md:top-10 mb-5 md:mb:0'>Upcoming Shows</h2>
+                <h2 className='upcoming-shows-title relative top-5 md:top-10 mb-5 md:mb:0 text-4xl md:text-6xl lg:text-7xl'>Upcoming Shows</h2>
                 {/* small */}
 
                 {five.map((show) => (
@@ -62,10 +62,10 @@ const Home = () => {
                         <button className='mobile-venue' onClick={() => setTimeout(() => window.open(show.venueLink, '_blank'), 500)}>{show.venue}</button>
                         <article className="mobile-ticket-container">
                             {show.ticketLink === 1 ? (
-                                <button onClick={() => setTimeout(() => notYetAvailable(), 250)} className='mobile-ticket-link'>Get Tickets</button>
+                                <button onClick={() => setTimeout(() => notYetAvailable(), 500)} className='mobile-ticket-link'>Get Tickets</button>
                             ) :
                                 show.ticketLink === 2 ? (
-                                    <button onClick={() => setTimeout(() => noCover(), 250)} className='mobile-ticket-link'>Get Tickets</button>
+                                    <button onClick={() => setTimeout(() => noCover(), 500)} className='mobile-ticket-link'>Get Tickets</button>
                                 ) :
                                     (
                                         <button onClick={() => setTimeout(() =>
